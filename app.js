@@ -46,7 +46,7 @@ io.sockets.on('connection', function(socket){
 	})
 });
 
-http.listen(2002, function(){
+http.listen(process.env.PORT || 2002, function(){
   console.log('listening on *:2002 - origin set');
 });
 
